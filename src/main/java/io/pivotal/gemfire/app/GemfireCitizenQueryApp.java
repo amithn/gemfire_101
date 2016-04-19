@@ -6,7 +6,7 @@ import com.gemstone.gemfire.cache.query.Query;
 import com.gemstone.gemfire.cache.query.QueryService;
 import com.gemstone.gemfire.cache.query.SelectResults;
 
-public class GemfireQueryNewApp {
+public class GemfireCitizenQueryApp {
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Connecting to the distributed system and creating the cache.");
