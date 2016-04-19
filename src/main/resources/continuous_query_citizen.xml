@@ -2,8 +2,8 @@
         "-//GemStone Systems, Inc.//GemFire Declarative Caching 6.5//EN"
         "http://www.gemstone.com/dtd/cache6_5.dtd">
 <client-cache>
-    <pool name="continous_query_pool" subscription-enabled="true">
-        <locator host="amiths-mbp-2" port="10334"/>
+    <pool name="continuous_query_pool" subscription-enabled="true">
+        <locator host="localhost" port="10334"/>
     </pool>
 
     <region name="citizens">

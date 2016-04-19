@@ -3,7 +3,7 @@
         "http://www.gemstone.com/dtd/cache6_5.dtd">
 <client-cache>
     <pool name="myPool">
-        <locator host="amiths-mbp-2" port="10334"/>
+        <locator host="localhost" port="10334"/>
     </pool>
 
     <region name="citizens">
