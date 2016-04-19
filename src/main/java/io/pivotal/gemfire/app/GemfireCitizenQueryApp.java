@@ -12,10 +12,10 @@ public class GemfireCitizenQueryApp {
         System.out.println("Connecting to the distributed system and creating the cache.");
 
         ClientCache cache = new ClientCacheFactory()
-                .set("cache-xml-file", "citizens_cache_without_cb.xml")
+                .set("cache-xml-file", "citizens_cache.xml")
                 .create();
 
-        String queryString1 ="SELECT * FROM /citizens";
+        String queryString1 ="SELECT * FROM /citizens WHERE age > 100";
         SelectResults<Citizen> citizens = doQuery(cache, queryString1);
 
         for(Citizen c: citizens) {

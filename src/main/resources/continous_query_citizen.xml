@@ -1,0 +1,15 @@
+<!DOCTYPE client-cache PUBLIC
+        "-//GemStone Systems, Inc.//GemFire Declarative Caching 6.5//EN"
+        "http://www.gemstone.com/dtd/cache6_5.dtd">
+<client-cache>
+    <pool name="continous_query_pool" subscription-enabled="true">
+        <locator host="amiths-mbp-2" port="10334"/>
+    </pool>
+
+    <region name="citizens">
+        <region-attributes refid="PROXY"/>
+    </region>
+
+    <!-- you can override or add to the PROXY attributes by adding
+         a region-attributes sub element here -->
+</client-cache>
