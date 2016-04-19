@@ -18,11 +18,11 @@ gemfire_101 is a quick start Gemfire client app to put data into your Gemfire ca
 
 ## Running the Continous Query Example
 
-This is an example of running a Continous Query on a Gemfire region. In this example the region is citizens.
-Before running the example you would need to create the "citizens" region using gfsh.
+>This is an example of running a Continous Query on a Gemfire region. In this example the region is citizens.
+>Before running the example you would need to create the "citizens" region using gfsh.
 
-1) Run "ContinousQueryExample" - it will register the callback handler and wait for insert/updates on the Citizens region where age > 20.
-2) Run CitizenRecordAgeGt20Inserter - which will insert records matching the Continous Query and trigger callbacks in SimpleCQListener
+ - 1) Run "ContinousQueryExample" - it will register the callback handler and wait for insert/updates on the Citizens region where age > 20.
+ - 2) Run CitizenRecordAgeGt20Inserter - which will insert records matching the Continous Query and trigger callbacks in SimpleCQListener
 
 
 
